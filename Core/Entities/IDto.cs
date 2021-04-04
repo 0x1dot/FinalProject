@@ -1,4 +1,4 @@
-﻿namespace Core.Entities.DTOs
+﻿namespace Core.Entities
 {
     public interface IDto
     {
