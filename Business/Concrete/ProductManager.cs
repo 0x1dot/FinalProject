@@ -99,7 +99,7 @@ namespace Business.Concrete
         }
         private IResult CheckIfProductNameExists(string productName)
         {
-            //Select count(*) from products where categoryId = 1
+            //Select count(*) from products where ProductName = productName
             var result = _productDal.GetAll(p => p.ProductName == productName).Any();
             if (result)
             {
