@@ -15,15 +15,15 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("getall")]
-        public IActionResult GetList()
+        public IActionResult GetAll()
         {
-            var result = _categoryService.GetList();
+            var result = _categoryService.GetAll();
             if (result.Success)
             {
-                return Ok(result.Data);
+                return Ok(result);
             }
 
-            return BadRequest(result.Message);
+            return BadRequest(result);
         }
     }
 }
